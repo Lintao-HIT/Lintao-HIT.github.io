@@ -269,24 +269,21 @@
     </tr>
 
 
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+    <tr onmouseout="Probabilistic_stop()" onmouseover="Probabilistic_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-            <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-            <source src="images/nerfcasting.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/nerfcasting.jpg' width=100%>
+            <div class="two" id='Probabilistic_image'><img src='images/Probabilistic.jpg' width=100%></div>
+            <img src='images/Probabilistic.jpg' width=100%>
           </div>
           <script type="text/javascript">
-            function nerfcasting_start() {
-              document.getElementById('nerfcasting_image').style.opacity = "1";
+            function Probabilistic_start() {
+              document.getElementById('Probabilistic_image').style.opacity = "1";
             }
 
-            function nerfcasting_stop() {
-              document.getElementById('nerfcasting_image').style.opacity = "0";
+            function Probabilistic_stop() {
+              document.getElementById('Probabilistic_image').style.opacity = "0";
             }
-            nerfcasting_stop()
+            Probabilistic_stop()
           </script>
         </td>
         <td style="padding:8px;width:80%;vertical-align:middle">
