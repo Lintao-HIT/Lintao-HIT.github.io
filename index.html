@@ -26,13 +26,15 @@
 
                 <p style="text-align:center">
                   <a href="mailto:lintao6324@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
                   <a href="https://scholar.google.com/citations?user=lQqJ-0wAAAAJ">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/Lintao-HIT/">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/Lintao.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Lintao.png" class="hoverZoomLink"></a>
+                <a href="images/Lintao.png">
+                  <img style="width:20%;max-width:20%;aspect-ratio: 3/4;object-fit: contain;" alt="profile photo" src="images/Lintao.png" class="hoverZoomLink">
+                </a>
               </td>
             </tr>
           </tbody></table>
@@ -70,21 +72,19 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://cat-4d.github.io/">
 			 <span class="papertitle">动态环境下的模块化多层级任务运动重规划框架</span>
-        </a>
         <br>
         <strong>Tao Lin</strong>, Chengfei Yue, Ziran Liu, Xibin Cao
         <br>
         <em>RA-L & IROS</em>, 2024 <font color="red"><strong>(Oral Presentation)</strong></font>
         <br>
-        <a href="https://cat-4d.github.io/">project page</a>
+        <a href="https://sites.google.com/view/mmrf/project">project page</a>
         /
-        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+        <a href="https://arxiv.org/pdf/2310.14816">arXiv</a>
         <p></p>
         <p>
-				An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
-        </p>
+        提出了一种基于采样性TAMP算法的实时重规划框架，在执行过程中，持续在任务层级和运动层级进行重规划，以快速应对动态环境。
+				</p>
       </td>
     </tr>
 
@@ -112,25 +112,16 @@
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">Generative Multiview Relighting for
-3D Reconstruction under Extreme Illumination Variation</span>
+          <span class="papertitle">基于通用平移与旋转步态的多臂航天器分层路径规划方法</span>
         </a>
         <br>
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>
+        YUE ChengFei, <strong>LIN Tao</strong>, ZHANG Xiao, CHEN XueQin & CAO XiBin
         <br>
-        <em>CVPR</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+        <em>Science China Technological Sciences</em>, 2023 
         <br>
-        <a href="https://relight-to-reconstruct.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
-        <p></p>
+        <a href="/data/Hierarchical_path_planning.pdf">paper</a>
         <p>
-				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
+        针对四臂机器人的攀爬移动，设计了平移、同面旋转与跨面旋转，三种基础移动步态。并基于步态库，提出了多臂航天器攀爬任务的分层路径规划框架，上层利用栅格化地图使用跳点法搜索全局参考移动路径；中层根据全局路径生成攀爬面序列，结合步态库遍历生成步态序列，根据朝向约束与能量指标筛选最优步态序列；下层根据步态序列，设计机器人动基座运动学，将机械臂末端的绝对轨迹解析为与基座的相对轨迹，并在关节角度解算时，利用零空间实现局部臂杆的避障调节。
         </p>
       </td>
     </tr>
@@ -561,8 +552,7 @@
         Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
         </p>
       </td>
-    </tr>
-	
+    </tr>	
 
 
 
@@ -711,8 +701,7 @@
       A class-agnostic inverse rendering solution for turning in-the-wild images of an object into a relightable 3D asset.
       </p>
     </td>
-  </tr>
-	
+  </tr>	
 
     <tr onmouseout="internerf_stop()" onmouseover="internerf_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
