@@ -33,7 +33,7 @@
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
                 <a href="images/Lintao.png">
-                  <img style="width:75%;max-width:75%;aspect-ratio: 3/4;object-fit: contain;" alt="profile photo" src="images/Lintao.png" class="hoverZoomLink">
+                  <img style="width:50%;max-width:50%;aspect-ratio: 3/4;object-fit: contain;" alt="profile photo" src="images/Lintao.png" class="hoverZoomLink">
                 </a>
               </td>
             </tr>
@@ -41,7 +41,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>主要项目经历</h2>
+                <h2>主要学术经历</h2>
                 <p>
                   我的研究方向为在轨服务，装配规划，机器人任务运动规划，技术栈较为全面，包含机械结构设计、硬件电路设计与软件算法开发。
                 </p>
@@ -50,7 +50,7 @@
           </tbody>
         </table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
@@ -164,7 +164,7 @@
     </tr>
 
 
-    <tr onmouseout="power_stop()" onmouseover="power_start()" bgcolor="#ffffd0">
+    <tr onmouseout="power_stop()" onmouseover="power_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='power_image'><video  width=100% height=100% muted autoplay loop>
@@ -200,18 +200,21 @@
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+          <div class="two" id='airbearing'>
+					  <video  width=100% height=100% muted autoplay loop>
+              <source src="images/airbearing.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='images/airbearing.jpg' width=100%>
         </div>
         <script type="text/javascript">
           function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+            document.getElementById('airbearing').style.opacity = "1";
           }
 
           function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+            document.getElementById('airbearing').style.opacity = "0";
           }
           ever_stop()
         </script>
@@ -232,7 +235,7 @@
     </tr>
 
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
@@ -271,82 +274,86 @@
     <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-          <source src="images/nerfcasting.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nerfcasting.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function nerfcasting_start() {
-            document.getElementById('nerfcasting_image').style.opacity = "1";
-          }
+            <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
+            <source src="images/nerfcasting.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/nerfcasting.jpg' width=100%>
+          </div>
+          <script type="text/javascript">
+            function nerfcasting_start() {
+              document.getElementById('nerfcasting_image').style.opacity = "1";
+            }
 
-          function nerfcasting_stop() {
-            document.getElementById('nerfcasting_image').style.opacity = "0";
-          }
-          nerfcasting_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360835224002651">
-          <span class="papertitle">基于概率运动原语的多任务学习框架</span>
-        </a>
-        <br>
-        Chengfei Yue, Tian Gao, Lang Lu, <strong>Tao Lin</strong>, Yunhua Wu
-        <br>
-        <em>Computers & Industrial Engineering</em>, 2024
-        <br>
-        <a href="paper/Probabilistic_motion_primitives.pdf">Paper</a>
-        <p></p>
-        <p>
-         一种基于条件概率运动基元（ProMP）的多任务学习框架，实现机器人在多个任务间的快速技能迁移与轨迹外推，具备高效的学习与广泛的泛化能力。
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+            function nerfcasting_stop() {
+              document.getElementById('nerfcasting_image').style.opacity = "0";
+            }
+            nerfcasting_stop()
+          </script>
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360835224002651">
+            <span class="papertitle">基于概率运动原语的多任务学习框架</span>
+          </a>
+          <br>
+          Chengfei Yue, Tian Gao, Lang Lu, <strong>Tao Lin</strong>, Yunhua Wu
+          <br>
+          <em>Computers & Industrial Engineering</em>, 2024
+          <br>
+          <a href="paper/Probabilistic_motion_primitives.pdf">Paper</a>
+          <p></p>
+          <p>
+          一种基于条件概率运动基元（ProMP）的多任务学习框架，实现机器人在多个任务间的快速技能迁移与轨迹外推，具备高效的学习与广泛的泛化能力。
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
           
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+      <tr>
+        <td style="padding:16px;width:100%;vertical-align:middle">
+          <h2>主要获奖荣誉</h2>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>主要获奖荣誉</h2>
-              </td>
+              <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2018</td>
+              <td style="padding:8px;width:85%;vertical-align:top;">国家奖学金</td>
             </tr>
             <tr>
-              <td style="padding:0px;width:100%;vertical-align:middle">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tr>
-                    <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2018</td>
-                    <td style="padding:8px;width:85%;vertical-align:top;">国家奖学金</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2019</td>
-                    <td style="padding:8px;width:85%;vertical-align:top;">国家奖学金、ROBOCON机器人大赛全国季军、黑龙江省三好学生、互联网+大学生创新创业大赛省级金奖、哈尔滨市大学生创业大赛一等奖</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2021</td>
-                    <td style="padding:8px;width:85%;vertical-align:top;">哈尔滨工业大学优秀毕业生、哈尔滨工业大学本科优秀毕业设计、研究生学业一等奖学金</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2024</td>
-                    <td style="padding:8px;width:85%;vertical-align:top;">博士研究生国家奖学金</td>
-                  </tr>
-                </table>
-              </td>
+              <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2019</td>
+              <td style="padding:8px;width:85%;vertical-align:top;">国家奖学金、ROBOCON机器人大赛全国季军、黑龙江省三好学生、互联网+大学生创新创业大赛省级金奖、哈尔滨市大学生创业大赛一等奖</td>
             </tr>
-          </tbody></table>
+            <tr>
+              <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2021</td>
+              <td style="padding:8px;width:85%;vertical-align:top;">哈尔滨工业大学优秀毕业生、哈尔滨工业大学本科优秀毕业设计、研究生学业一等奖学金</td>
+            </tr>
+            <tr>
+              <td style="padding:8px;width:15%;vertical-align:top;font-weight:bold;">2024</td>
+              <td style="padding:8px;width:85%;vertical-align:top;">博士研究生国家奖学金</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Thanks <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> for sharing this template.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:0px">
+            <br>
+            <p style="text-align:right;font-size:small;">
+              Thanks <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> for sharing this template.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
         </td>
       </tr>
     </table>
