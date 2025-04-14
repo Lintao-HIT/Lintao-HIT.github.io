@@ -234,6 +234,42 @@
       </td>
     </tr>
 
+    <tr onmouseout="SMPC_stop()" onmouseover="SMPC_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='SMPC_image'>
+            <video  width=100% height=100% muted autoplay loop>
+              <source src="images/SMPC.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video></div>
+          <img src='images/SMPC.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function SMPC_start() {
+            document.getElementById('SMPC_image').style.opacity = "1";
+          }
+
+          function SMPC_stop() {
+            document.getElementById('SMPC_image').style.opacity = "0";
+          }
+          SMPC_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">面向空间机器人序列作业的优先级切换模型预测控制</span>
+        <br>
+        Ziran Liu, Zijian Dai, Chengfei Yue, <strong>Tao Lin</strong>, Antonella Ferrara, Xibin Cao
+        <br>
+        <em>TAES</em>, 2025
+        <br>
+        <a href="paper/SMPC.pdf">Paper</a>
+        <p></p>
+        <p>一种基于优先级的切换模型预测控制方法，通过引入软优先级策略调节各阶段任务目标，有效平衡空间机器人顺序操作中的冲突，提升整体任务效率与过渡平滑性。</p>
+      </td>
+    </tr>
+
+
+
 
     <tr onmouseout="demonstration_stop()" onmouseover="demonstration_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
