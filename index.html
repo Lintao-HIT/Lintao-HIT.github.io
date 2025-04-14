@@ -197,7 +197,7 @@
     </tr>
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+    <tr onmouseout="airbearing_stop()" onmouseover="airbearing_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='airbearing'>
@@ -209,14 +209,14 @@
           <img src='images/airbearing.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function ever_start() {
+          function airbearing_start() {
             document.getElementById('airbearing').style.opacity = "1";
           }
 
-          function ever_stop() {
+          function airbearing_stop() {
             document.getElementById('airbearing').style.opacity = "0";
           }
-          ever_stop()
+          airbearing_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
@@ -235,24 +235,22 @@
     </tr>
 
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
+    <tr onmouseout="demonstration_stop()" onmouseover="demonstration_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
+          <div class="two" id='demonstration_image'>
+            <img src='images/demonstration.jpg' width="160"></div>
+          <img src='images/demonstration.jpg' width="160">
         </div>
         <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
+          function demonstration_start() {
+            document.getElementById('demonstration_image').style.opacity = "1";
           }
 
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
+          function demonstration_stop() {
+            document.getElementById('demonstration_image').style.opacity = "0";
           }
-          cat3d_stop()
+          demonstration_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
