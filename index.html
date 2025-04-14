@@ -128,24 +128,24 @@
     </tr>
 
 
-    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+    <tr onmouseout="assembly_stop()" onmouseover="assembly_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
-          <source src="images/simvs.mp4" type="video/mp4">
+          <div class="two" id='assembly_image'><video  width=100% muted autoplay loop>
+          <source src="images/assembly.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/simvs.jpg' width=100%>
+          <img src='images/assembly.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function simvs_start() {
-            document.getElementById('simvs_image').style.opacity = "1";
+          function assembly_start() {
+            document.getElementById('assembly_image').style.opacity = "1";
           }
 
-          function simvs_stop() {
-            document.getElementById('simvs_image').style.opacity = "0";
+          function assembly_stop() {
+            document.getElementById('assembly_image').style.opacity = "0";
           }
-          simvs_stop()
+          assembly_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
