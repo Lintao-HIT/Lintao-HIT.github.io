@@ -76,7 +76,7 @@
         <br>
         <strong>Tao Lin</strong>, Chengfei Yue, Ziran Liu, Xibin Cao
         <br>
-        <em>RA-L & IROS</em>, 2024 <font color="red"><strong>(Oral Presentation)</strong></font>
+        <em>RA-L</em>, 2024 <font color="red">(IROS Oral Presentation)</font>
         <br>
         <a href="https://sites.google.com/view/mmrf/project">project page</a>
         /
@@ -111,15 +111,13 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">基于通用平移与旋转步态的多臂航天器分层路径规划方法</span>
-        </a>
+        <span class="papertitle">基于通用平移与旋转步态的多臂航天器分层路径规划方法</span>
         <br>
-        YUE ChengFei, <strong>LIN Tao</strong>, ZHANG Xiao, CHEN XueQin & CAO XiBin
+        Chengfei Yue, <strong>Tao Lin</strong>, Xiao Zhang, Xueqin Chen, Xibin Cao
         <br>
         <em>Science China Technological Sciences</em>, 2023 
         <br>
-        <a href="/data/Hierarchical_path_planning.pdf">paper</a>
+        <a href="/data/Hierarchical_path_planning.pdf">Paper</a>
         <p>
         针对四臂机器人的攀爬移动，设计了平移、同面旋转与跨面旋转，三种基础移动步态。并基于步态库，提出了多臂航天器攀爬任务的分层路径规划框架，上层利用栅格化地图使用跳点法搜索全局参考移动路径；中层根据全局路径生成攀爬面序列，结合步态库遍历生成步态序列，根据朝向约束与能量指标筛选最优步态序列；下层根据步态序列，设计机器人动基座运动学，将机械臂末端的绝对轨迹解析为与基座的相对轨迹，并在关节角度解算时，利用零空间实现局部臂杆的避障调节。
         </p>
@@ -148,31 +146,16 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://alextrevithick.github.io/simvs/">
-          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
-        </a>
+          <span class="papertitle">单臂机器人无治具自主装配规划</span>
         <br>
-        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a  href="https://poolio.github.io/">Ben Poole</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://holynski.org/">Aleksander Holynski</a>,
-        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <strong>Tao Lin</strong>, Chengfei Yue, Peiji Wang, Haoyong Yu, Xibin Cao
         <br>
-        <em>CVPR</em>, 2025
+        <em>Science China Technological Sciences</em>, 2025 <font color="red">(Under Review)</font> 
         <br>
-        <a href="https://alextrevithick.github.io/simvs/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
+        <a href="https://sites.google.com/view/fixture-free-assembly-planning">project page</a>
         <p></p>
         <p>
-        Simulating the world with video models lets you make inconsistent captures consistent.
+          提出面向非结构环境的单臂机器人无治具装配框架。在装配序列规划中，引入“稳定放置-几何碰撞-支撑负载”的支撑面评估机制，显著提升无治具装配的物理可行性。使用深度优先搜索结合分支定界技巧，在充分探索的前提下提高了规划效率；在装配操作规划中，设计了搬运、插入、旋拧等技能，综合考虑多个技能原语的运动约束规划夹取位姿，确保多技能原语连续执行的稳定性。
         </p>
       </td>
     </tr>
@@ -199,22 +182,14 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://x.com/jon_barron/status/1891918200931061996">
-			<span class="papertitle">A Power Transform
-</span>
-        </a>
+			<span class="papertitle">基于技能原语的空间机器人桁架装配控制方法</span>
         <br>
-				<strong>Jonathan T. Barron</strong>
+        <strong>林涛</strong>, 岳程斐, 郭靖宇，曹喜滨
         <br>
-        <em>arXiv</em>, 2025
-        <br>
-        <a href="https://x.com/jon_barron/status/1891918200931061996">tweet</a>
-        /
-        <a href="https://arxiv.org/abs/2502.10647">arXiv</a>
+        <em>宇航学报</em>, 2025 <font color="red">(Under Review)</font>
         <p></p>
         <p>
-				A slight tweak to the Box-Cox power transform generalizes a variety of curves, losses, kernel functions, probability distributions, bump functions, and neural network activation functions.
-        </p>
+        设计并制作了径向快装桁架，依靠弹性插销与套筒完成锁紧。建立桁架杆装配过程中对准、压入、锁紧的接触力学模型，并设计相应的装配技能原语，设计解析器将技能原语参数转化为机器人末端行为，利用桁架节点的弹性实现了负间隙下的桁架杆装配。</p>
       </td>
     </tr>
 
@@ -239,29 +214,16 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
-</span>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10011657">
+			  <span class="papertitle">基于气浮轴承的航天机器人实验平台设计与演示</span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				Ziran Liu, <strong>Tao Lin</strong>, Hongxu Wang, Chengfei Yue, Xibin Cao
 				<br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <em>Robio</em>, 2022
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+        设计并搭建一种基于气浮轴承的双臂空间机器人地面模拟器，在控制系统中引入模型预测控制与切换策略，针对不同操作阶段灵活分配喷气推力器与动量轮，实现轨迹规划、姿态调控与捕获任务全过程的精确控制
         </p>
       </td>
     </tr>
